@@ -1,20 +1,33 @@
+import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { Services } from '@/components/Services';
 import { About } from '@/components/About';
+import { InstagramFeed } from '@/components/InstagramFeed';
 import { Footer } from '@/components/Footer';
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import AutoCarousel from '@/components/AutoCarousel';
+import FloatingButtons from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Navbar />
       <main>
-        <Hero />
-        <Services />
-        <About />
-        <Footer />
+        <div id="inicio">
+          <Hero />
+        </div>
+        <div id="servicios">
+          <Services />
+        </div>
+        <div id="sobre-mi">
+          <About />
+        </div>
+        <div id="instagram">
+          <InstagramFeed />
+        </div>
+        <div id="contacto">
+          <Footer />
+        </div>
       </main>
-      <FloatingWhatsApp />
+      <FloatingButtons />
     </div>
   );
 };

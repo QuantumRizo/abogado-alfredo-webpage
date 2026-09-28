@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,10 +9,35 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Información de contacto */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-accent">Alfredo Miranda</h3>
+            <img
+              src="/logotipo_negativo.png"
+              alt="Miranda Consultoría Legal Migratoria"
+              className="h-10 mb-4"
+            />
             <p className="text-primary-foreground/80 mb-4">
               Abogado especialista en derecho migratorio
             </p>
+            {/* Redes sociales */}
+            <div className="flex items-center gap-3 mt-4">
+              <a
+                href="https://www.instagram.com/mgr.miranda?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                aria-label="Síguenos en Instagram"
+              >
+                <Instagram className="w-5 h-5 text-white" />
+              </a>
+              <a
+                href="https://wa.me/522222933552?text=Hola,%20me%20gustaría%20agendar%20una%20cita"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                aria-label="Contactar por WhatsApp"
+              >
+                <Phone className="w-5 h-5 text-white" />
+              </a>
+            </div>
           </div>
 
           {/* Contacto */}

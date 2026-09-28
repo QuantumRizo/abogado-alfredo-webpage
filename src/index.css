@@ -1,3 +1,20 @@
+/* Brand Fonts */
+@font-face {
+  font-family: 'Amazing Slab';
+  src: url('/fonts/Amazing-Slab-Bold-trial.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/glacial-indifference.regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,12 +25,12 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Paleta profesional de abogado */
-    --navy: 210 65% 11%; /* Azul marino #0a1a2f */
-    --gold: 38 48% 60%; /* Dorado suave #c9a86a */
+    /* Paleta oficial Brand Board */
+    --navy: 207 33% 30%; /* Azul oscuro #354E66 */
+    --gold: 42 65% 62%; /* Dorado #DDB95F */
     --white: 0 0% 100%; /* Blanco puro */
-    --gray-light: 0 0% 96%; /* Gris profesional #f4f4f4 */
-    --navy-light: 210 50% 20%; /* Azul marino claro para variantes */
+    --gray-light: 210 20% 96%; /* Gris profesional */
+    --navy-light: 207 33% 38%; /* Azul claro para variantes */
     
     --background: var(--white);
     --foreground: var(--navy);
@@ -101,7 +118,11 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amazing Slab', Georgia, serif;
   }
 }
 
@@ -116,5 +137,13 @@ All colors MUST be HSL.
 
   .text-balance {
     text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }

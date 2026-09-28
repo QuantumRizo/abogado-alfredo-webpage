@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
 
 export function Hero() {
-  const navigate = useNavigate();
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -38,7 +36,6 @@ export function Hero() {
         </p>
         <div className="flex flex-col gap-4 text-primary-foreground/90">
 
-
           <Button
             size="lg"
             asChild
@@ -49,11 +46,11 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Agendar Cita
+              📅 Agendar Cita
             </a>
           </Button>
           <p className="text-lg leading-snug">
-            Do you need legal assistance in English? Make an appointment by clicking the “Agendar Cita” button above.
+            Do you need legal assistance in English? Make an appointment by clicking the "Agendar Cita" button above.
           </p>
         </div>
 
