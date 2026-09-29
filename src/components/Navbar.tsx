@@ -49,7 +49,7 @@ export function Navbar() {
             className="flex items-center gap-2 group"
           >
             <img
-              src={scrolled ? '/logotipo.png' : '/logotipo_negativo.png'}
+              src={scrolled ? '/imagotipo.png' : '/imagotipo_negativo.png'}
               alt="Miranda Consultoría Legal Migratoria"
               className="h-8 md:h-10 transition-all duration-300 group-hover:scale-105"
             />

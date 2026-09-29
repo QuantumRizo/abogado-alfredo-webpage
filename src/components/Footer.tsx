@@ -10,7 +10,7 @@ export function Footer() {
           {/* Información de contacto */}
           <div>
             <img
-              src="/logotipo_negativo.png"
+              src="/imagotipo_negativo.png"
               alt="Miranda Consultoría Legal Migratoria"
               className="h-10 mb-4"
             />
