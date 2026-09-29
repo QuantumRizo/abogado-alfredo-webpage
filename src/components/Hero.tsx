@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { CalendarCheck } from 'lucide-react';
 
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
@@ -46,7 +47,7 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              📅 Agendar Cita
+              <CalendarCheck className="w-5 h-5" /> Agendar Cita
             </a>
           </Button>
           <p className="text-lg leading-snug">
