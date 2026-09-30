@@ -12,7 +12,7 @@ export function Footer() {
             <img
               src="/imagotipo_negativo.png"
               alt="Miranda Consultoría Legal Migratoria"
-              className="h-10 mb-4"
+              className="h-14 mb-4"
             />
             <p className="text-primary-foreground/80 mb-4">
               Abogado especialista en derecho migratorio
